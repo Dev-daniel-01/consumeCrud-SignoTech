@@ -20,3 +20,33 @@
     height: 40%;
     border-radius: 16px;
 }
+
+
+.pCards{
+    width: 14rem;
+}
+
+.cardInside{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.button{
+    background-color: rgb(210, 180, 140);
+    color:  #002147;  
+    width: 12vw;
+    height: 4vh;
+    margin-top: 2rem;
+    border-radius: 8px;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.button:hover{
+    opacity: 1;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(210, 180, 140, 0.5);
+   }
+   
