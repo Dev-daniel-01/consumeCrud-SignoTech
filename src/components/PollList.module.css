@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.wrapCards {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #002147;
+    color: rgb(210, 180, 140);
+    width: 350px;
+    min-height: 200px;
+    height: auto;
+    gap: 1rem;
+    border-radius: 16px;
+    transition: all 400ms ease-in-out;
+}
+
+.cards:hover{
+    box-shadow: 0 10px 30px rgba(0, 33, 71, 0.6);
+    transform: scale(1.05);
+}
+
+.title {
+    color: #002147;
+}
+
+.button {
+    background-color: rgb(210, 180, 140);;
+    color: #002147;
+    width: 150px;
+    height: 2rem;
+    border-radius: 8px;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+}
+
+.button:hover{
+ opacity: 1;
+ transform: scale(1.03);
+ box-shadow: 0 4px 12px rgba(210, 180, 140, 0.5);
+}
+
+.pCards{
+    width: 80%;
+    font-size: 0.8rem;
+}

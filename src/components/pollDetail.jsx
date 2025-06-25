@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchPoll, voteOption } from "../api/pollService";
 import Option from "./Option";
+import style from "./pollDetail.module.css"
 
 export default function PollDetail() {
     const { id } = useParams();
@@ -45,8 +46,9 @@ export default function PollDetail() {
     };
 
     return (
-        <div>
-            <h2>{poll.title}</h2>
+        <div className={style.container}>
+            <div className={style.card}>
+                <h2>{poll.title}</h2>
             <p>
                 De: {start.toLocaleString()} <br />
                 Até: {end.toLocaleString()}
@@ -71,6 +73,8 @@ export default function PollDetail() {
             {successMsg && <p style={{ color: "green" }}>{successMsg}</p>}
             {error && <p style={{ color: "red" }}>{error}</p>}
             {!isActive && <p>Enquete não está ativa no momento.</p>}
+            </div>
+            
         </div>
     );
 }
