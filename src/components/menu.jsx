@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+import home from "../assets/home.png";
 
 import style from "./menu.module.css";
-import home from "../assets/home.png";
 
 
 export const Menu = ({ option01, option02, option03, onClickCriar }) => {
+  const navigate = useNavigate();
   return (
     <nav className={style.navBar}>
       <ul className={style.navMenu}>
         <li className={style.navSpace}>
-          <Link className={style.navLink} to="/">
-            <img src={home} alt="home" style={{ width: "40px" }} />
-          </Link>
+            <img src={home} alt="home" style={{ width: "40px", cursor: "pointer" }} onClick={() => navigate("/")}/>
         </li >
         <li className={style.navSpace}>
           <p className={style.navLink} style={{ cursor: "default" }}>

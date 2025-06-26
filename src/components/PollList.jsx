@@ -1,12 +1,16 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-
-import style from "./PollList.module.css";
+import { useNavigate } from "react-router";
 
 import ModalUpdate from "./modalUpdate";
 
+import style from "./PollList.module.css";
+
+
+
 
 export default function PollList({ polls, setPolls }) {
+  const navigate = useNavigate();
+
   const [error, setError] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedPoll, setSelectedPoll] = useState(null);
@@ -70,10 +74,7 @@ export default function PollList({ polls, setPolls }) {
                 <strong>{new Date(poll.end_date).toLocaleString()}</strong>
               </p>
               <div style={{ display: "flex", gap: "1rem", paddingTop: "1rem" }}>
-                <Link to={`/poll/${poll.id}`}>
-                  <button className={style.button}>Ver detalhes</button>
-                </Link>
-
+                <button className={style.button} onClick={() => navigate(`/poll/${poll.id}`)}>Ver detalhes</button>
                 <button
                   onClick={() => fetchPollById(poll.id)}
                   className={style.button}

@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+
 import { fetchPoll, voteOption } from "../api/pollService";
+
+import Option from "./Option";
 
 import style from "./pollDetail.module.css";
 
-import Option from "./Option";
+
 
 
 export default function PollDetail() {

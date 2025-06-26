@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
+
 import { fetchPolls } from "../api/pollService";
+import { Menu } from "../components/menu";
+
 import PollList from "../components/PollList";
 import ModalCreate from "../components/PollCreate";
+
 import style from "./home.module.css";
-import { Menu } from "../components/menu";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);

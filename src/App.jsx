@@ -9,7 +9,6 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/poll/:id" element={<PollPage />} />
-        
       </Routes>
     </Router>
   );
