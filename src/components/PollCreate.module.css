@@ -5,17 +5,14 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-  /* fundo escuro translúcido */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  /* fica acima de todo o conteúdo */
 }
 
 .modalContainer {
   background-color: #0B2545;
-  /* Oxford Blue */
   padding: 2rem;
   border-radius: 12px;
   width: 100%;
@@ -45,7 +42,11 @@
 .modalContent h2 {
   margin-top: 0;
   color: #D2B48C;
-  /* Tan */
+}
+
+.modalContent label {
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .modalContent input {

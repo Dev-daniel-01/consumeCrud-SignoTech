@@ -11,9 +11,12 @@
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .cards {
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,12 +38,13 @@
 
 .title {
     color: #002147;
+    font-size: 2.5rem;
 }
 
 .button {
     background-color: rgb(210, 180, 140);;
     color: #002147;
-    width: 6.5vw;
+    width: 100px;
     height: 2rem;
     border-radius: 8px;
     opacity: 0.9;
@@ -58,4 +62,49 @@
 .pCards{
     width: 80%;
     font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+
+  .button {
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .cards{
+
+    width: 200px;
+    min-height: 200px;
+    height: auto;
+    gap: 1rem;
+    border-radius: 16px;
+    transition: all 400ms ease-in-out;
+  }
+}
+
+@media (max-width: 512px) {
+
+  .button {
+    width: 100px;
+    font-size: 13px;
+  }
+
+  .cards{
+    padding: 1rem;
+    width: 280px;
+    min-height: 200px;
+    height: auto;
+    gap: 0.5rem;
+    border-radius: 16px;
+    transition: all 400ms ease-in-out;
+  }
+
+  .titleCards{
+    font-size: 1rem;
+  }
+
+  .pCards{
+    width: 90%;
+    font-size: 0.9rem;
+}
 }

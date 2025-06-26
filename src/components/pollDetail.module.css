@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,45 +8,119 @@
     height: 80vh;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     background-color: #002147;
-    color: rgb(210, 180, 140);  
+    color: rgb(210, 180, 140);
     width: 34%;
-    height: 40%;
+    padding: 2rem;
     border-radius: 16px;
 }
 
-
-.pCards{
+.pCards {
     width: 14rem;
+    text-align: center;
 }
 
-.cardInside{
+.cardInside {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
     gap: 2rem;
-    padding-top: 2rem;
+    margin-top: 1rem;
 }
 
-.button{
-    background-color: rgb(210, 180, 140);
-    color:  #002147;  
-    width: 12vw;
-    height: 4vh;
-    margin-top: 2rem;
-    border-radius: 8px;
-    transition: all 400ms ease-in-out;
+.button,
+.button1 {
+     padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-weight: bold;
     cursor: pointer;
+    border: none;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.button {
+    background-color: rgb(210, 180, 140);
+    color: #002147;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(210, 180, 140, 0.5);
+}
+
+.button1 {
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
+
+.button1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgb(110, 0, 0);
 }
 
 
-.button:hover{
-    opacity: 1;
-    transform: scale(1.03);
-    box-shadow: 0 4px 12px rgba(210, 180, 140, 0.5);
-   }
-   
+.errorMsg {
+  color: #ff4d4d; 
+  background-color: rgba(255, 77, 77, 0.1);
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-top: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.successMsg {
+  color: green;
+  margin-top: 1rem;
+}
+
+.inactiveMsg {
+  color: red;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 70%;
+        padding: 1.5rem;
+    }
+
+    .buttonGroup {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .button,
+    .button1 {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .titleCard{
+        font-size: 1rem;
+    };
+
+     .button,
+    .button1 {
+    padding: 0.5rem 2rem;
+    font-size: 1.1rem;
+    }
+}

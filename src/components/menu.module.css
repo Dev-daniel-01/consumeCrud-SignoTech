@@ -1,9 +1,9 @@
-.navBar{
+.navBar {
     background-color: #002147;
     color: rgb(210, 180, 140);
 }
 
-.nav-menu{
+.navMenu {
     width: 100vw;
     height: 8vh;
     display: flex;
@@ -12,8 +12,7 @@
     justify-content: space-around;
 }
 
-.nav-link{
-    width: 10rem;
+.navLink {
     font-size: 1rem;
     opacity: 0.9;
     cursor: pointer;
@@ -21,8 +20,11 @@
     text-decoration: none;
 }
 
-.nav-link:hover{
-
+.navLink:hover {
     opacity: 1.1;
     filter: drop-shadow(0 4px 12px rgba(210, 180, 140, 0.5));
+}
+
+.navSpace {
+    width: 10rem;
 }

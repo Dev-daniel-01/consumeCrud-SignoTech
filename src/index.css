@@ -10,3 +10,11 @@
 li{
   list-style: none;
 }
+
+input{
+  color: #000000c4;
+}
+
+input::placeholder{
+  color: #000000c4;
+}
