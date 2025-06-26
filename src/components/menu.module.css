@@ -1,6 +1,9 @@
 .navBar {
     background-color: #002147;
     color: rgb(210, 180, 140);
+    position: fixed;
+    z-index: 999;
+    top: 0;
 }
 
 .navMenu {

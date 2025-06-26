@@ -6,6 +6,8 @@
     width: 100vw;
     min-height: 100vh;
     height: auto;
+    padding-bottom: 2rem;
+    padding-top: 6rem;
     background-color: rgb(210, 180, 140);
  
 }
